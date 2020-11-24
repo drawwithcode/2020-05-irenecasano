@@ -18,8 +18,8 @@ io.on("connection", newConnection);
 
 function newConnection(socket) {
   console.log("new connection: " + socket.client.id);
-  let clientColor = getRandomColor();
-  socket.emit("color", clientColor);
+  // let clientColor = getRandomColor();
+  // socket.emit("color", clientColor);
   socket.on("mouse", mouseMessage);
 
   function mouseMessage(dataReceived) {
@@ -28,12 +28,13 @@ function newConnection(socket) {
   }
 }
 
-function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
 
-  return color;
-}
+// function getRandomColor() {
+//   var letters = "0123456789ABCDEF";
+//   var color = "#";
+//   for (var i = 0; i < 6; i++) {
+//     color += letters[Math.floor(Math.random() * 16)];
+//   }
+//
+//   return color;
+// }
