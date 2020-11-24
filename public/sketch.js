@@ -74,7 +74,7 @@ function draw() {
 }
 
 function mouseDragged() {
-  push();
+
   // fill(myColor);
   // translate(mouseX + 25, mouseY + 25);
   // let a = atan2(- 24, - 25);
@@ -86,7 +86,7 @@ function mouseDragged() {
   rect(mouseX , mouseY +50, 7, 7)
   rect(mouseX, mouseY +60, 7, 7)
   // cursor("./assets/images/plane1.png")
-  pop();
+
   let message = {
     x: mouseX,
     y: mouseY +60,
