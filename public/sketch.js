@@ -44,8 +44,8 @@ cursors = [plane1, plane2, plane3, plane4, plane5, plane6, plane7, plane8, plane
 
   contrail = loadImage("./assets/images/contrail.png");
 
-  myFont = loadFont('assets/font/FreePixel.ttf');
-  myFont2 = loadFont('assets/font/FreePixel2.ttf');
+  // myFont = loadFont('./assets/font/FreePixel.ttf');
+  myFont2 = loadFont('/.assets/font/FreePixel2.ttf');
 }
 
 
@@ -56,7 +56,7 @@ imageMode(CENTER)
 image(sky, width/2, height/2, windowWidth, windowHeight)
 
   // let randomImg = random(cursors)
-  cursor("./assets/images/pp.png");
+  // cursor("./assets/images/pp.png");
   // cursor("./assets/images/plane1.png")
  //  imageMode(CENTER);
  // colorMode(HSB)
