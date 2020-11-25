@@ -1,6 +1,6 @@
 let socket = io();
 // let myColor = "white";
-let cursors = [];
+// let cursors = [];
 let sky;
 
 socket.on("connect", newConnection);
@@ -21,7 +21,7 @@ function drawOtherMouse(data) {
 // image(contrail, data.x, data.y, 50, 48);
 // cursor("./assets/images/plane1.png")
 push()
-fill(255, 255, 255, 50);
+fill(255, 255, 255);
 rect(data.x, data.y +50, 7, 7)
 rect(data.x, data.y +60, 7, 7)
 pop()
@@ -29,31 +29,22 @@ pop()
 
 function preload(){
 sky = loadImage("./assets/images/back.jpeg");
-  planep = loadImage("./assets/images/pp.png");
+planep = loadImage("./assets/images/pp.png");
 
-  plane1 = loadImage("./assets/images/plane1.png");
-  plane2 = loadImage("./assets/images/plane2.png");
-  plane3 = loadImage("./assets/images/plane3.png");
-  plane4 = loadImage("./assets/images/plane4.png");
-  plane5 = loadImage("./assets/images/plane5.png");
-  plane6 = loadImage("./assets/images/plane6.png");
-  plane7 = loadImage("./assets/images/plane7.png");
-  plane8 = loadImage("./assets/images/plane8.png");
-  plane9 = loadImage("./assets/images/plane9.png");
-cursors = [plane1, plane2, plane3, plane4, plane5, plane6, plane7, plane8, plane9]
+// cursors = [plane1, plane2, plane3, plane4, plane5, plane6, plane7, plane8, plane9]
 
-  contrail = loadImage("./assets/images/contrail.png");
+contrail = loadImage("./assets/images/contrail.png");
 
   // myFont = loadFont('./assets/font/FreePixel.ttf');
-  myFont2 = loadFont('/.assets/font/FreePixel2.ttf');
+myFont2 = loadFont('/.assets/font/FreePixel2.ttf');
 }
 
 
 function setup() {
   createCanvas(windowWidth,windowHeight)
-    noStroke()
-imageMode(CENTER)
-image(sky, width/2, height/2, windowWidth, windowHeight)
+  noStroke()
+  imageMode(CENTER)
+  image(sky, width/2, height/2, windowWidth, windowHeight)
 
   // let randomImg = random(cursors)
   // cursor("./assets/images/pp.png");
