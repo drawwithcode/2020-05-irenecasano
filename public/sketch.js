@@ -17,9 +17,7 @@ function newConnection() {
 
 function drawOtherMouse(data) {
 // fill(data.color);
-// rect(data.x, data.y, 30, 20);
 // image(contrail, data.x, data.y, 50, 48);
-// cursor("./assets/images/plane1.png")
 push()
 fill(255, 255, 255, 50);
 rect(data.x, data.y +50, 7, 7)
@@ -48,10 +46,6 @@ function setup() {
 
   // let randomImg = random(cursors)
   // cursor("./assets/images/pp.png");
-  // cursor("./assets/images/plane1.png")
- //  imageMode(CENTER);
- // colorMode(HSB)
- // myTint = color(random(255));
  textSize(20)
  textFont(myFont2)
  text("leave a message for your loved one", 50, 50)
@@ -70,8 +64,6 @@ function mouseDragged() {
   // translate(mouseX + 25, mouseY + 25);
   // let a = atan2(- 24, - 25);
   // rotate(a);
-    // rect(mouseX, mouseY, 30, 20)
-  // tint(myTint);
   // image(contrail, mouseX, mouseY, 37, 36)
   fill(255, 255, 255, 200);
   rect(mouseX , mouseY +50, 7, 7)
