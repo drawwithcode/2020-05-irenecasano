@@ -21,7 +21,7 @@ function drawOtherMouse(data) {
 // image(contrail, data.x, data.y, 50, 48);
 // cursor("./assets/images/plane1.png")
 push()
-fill(255, 255, 255);
+fill(255, 255, 255, 50);
 rect(data.x, data.y +50, 7, 7)
 rect(data.x, data.y +60, 7, 7)
 pop()
@@ -36,7 +36,7 @@ planep = loadImage("./assets/images/pp.png");
 contrail = loadImage("./assets/images/contrail.png");
 
   // myFont = loadFont('./assets/font/FreePixel.ttf');
-myFont2 = loadFont('/.assets/font/FreePixel2.ttf');
+myFont2 = loadFont('./assets/font/FreePixel2.ttf');
 }
 
 
