@@ -21,9 +21,9 @@ function newConnection(socket) {
 
 
   // let clientColor = getRandomColor()
-let clientPlane = getPlane()
+// let clientPlane = getPlane()
   // socket.emit("color", clientColor)
-  socket.emit("myPlane", clientPlane)
+  // socket.emit("myPlane", clientPlane)
   //sendo color to all the other clients
   // socket.broadcast.emit("newPlayer", clientColor);
   socket.on("mouse", mouseMessage);
@@ -43,9 +43,9 @@ let clientPlane = getPlane()
   // }
 }
 
-function getPlane() {
-  let myPlane = console.log(Buffer.from("image64", 'base64').toString('ascii'))
-return myPlane}
+// function getPlane() {
+//   let myPlane = console.log(Buffer.from("image64", 'base64').toString('ascii'))
+// return myPlane}
 // function getRandomColor() {
 // var letters = "0123456789ABCDEF";
 // var color = "#";

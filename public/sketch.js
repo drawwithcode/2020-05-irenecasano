@@ -43,9 +43,9 @@ p1.image(data.myPlane, data.x, data.y)
 
   let sketch1 = function(p1){
     p1.preload = function() {
-            sky = p2.loadImage("./assets/images/back.jpeg");
+            sky = p2.loadImage("./assets/images/download.jpeg");
 
-      plane1 = p1.loadImage("./assets/images/plane1.png");
+
       plane2 = p1.loadImage("./assets/images/plane2.png");
       plane3 = p1.loadImage("./assets/images/plane3.png");
       plane4 = p1.loadImage("./assets/images/plane4.png");
@@ -54,7 +54,7 @@ p1.image(data.myPlane, data.x, data.y)
       plane7 = p1.loadImage("./assets/images/plane7.png");
       plane8 = p1.loadImage("./assets/images/plane8.png");
       plane9 = p1.loadImage("./assets/images/plane9.png");
-      planeA = p1.loadImage("./assets/images/planea.png");
+      
 
       planes = [plane2, plane3, plane4, plane5, plane6, plane7, plane8, plane9]
       randomPlane = p1.random(planes);
@@ -65,7 +65,7 @@ p1.image(data.myPlane, data.x, data.y)
    	canvas1 = p1.createCanvas(p1.windowWidth, p1.windowHeight, 0, 0);
     canvas1.position(0,0);
     p2.imageMode(p2.CENTER);
-    p2.image(sky, p2.width/2, p2.height/2, p2.windowWidth, p2.windowHeight)
+    p2.image(sky, p2.width/2, p1.height/2, p2.windowWidth, p2.windowHeight)
     p2.push()
     p2.textSize(20)
     p2.textFont(myFont2)
